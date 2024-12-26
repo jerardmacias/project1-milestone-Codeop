@@ -15,7 +15,7 @@ It was built with HTML, CSS, and Tailwind elements based on responsive design. I
    cd project1-layout-only
    ```
 
-3. Run the following command to install the modules::
+3. Run the following command to install the modules:
    ```bash
    npm install
    ```
