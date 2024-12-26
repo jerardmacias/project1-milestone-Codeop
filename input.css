@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("./fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Heavy";
+  src: url("./fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@layer components {
+  .testimonials-card {
+    @apply w-[370px] h-[476px] bg-no-repeat bg-contain px-[18px];
+  }
+  .waves {
+    background: linear-gradient(to right);
+    height: 90px;
+    position: relative;
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      height: 25px;
+    }
+    &::before {
+      left: -13px;
+      top: 23px;
+      right: 0;
+      background-size: 15px 15px;
+      background-image: radial-gradient(
+        circle at 3px -4px,
+        transparent 12px,
+        #fff 12px
+      );
+    }
+    &::after {
+      left: 0;
+      top: 11px;
+      right: -6px;
+      background-size: 7px 12px;
+      background-image: radial-gradient(
+        circle at -5px 17px,
+        transparent 13px,
+        #fff 13px
+      );
+      transform: rotate(180deg);
+    }
+  }
+}

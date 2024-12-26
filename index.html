@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projecte 1</title>
+  <link href="output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="container-fluid mx-auto">
+
+  <!-- HEADER -->
+  <header
+    class="h-full w-full sm:md:h-[740px] lg:h-[885px] xl:h-[1200px] 2xl:h-[1302px] bg-nav-background bg-no-repeat bg-cover text-white">
+    <section class="grid grid-cols-3 items-center px-12 py-4">
+      <!-- Brand -->
+      <h1 class="text-2xl font-gilroybold">Panto</h1>
+      <!-- <nav class="flex items-center justify-center space-x-8"> -->
+      <nav class="hidden md:flex items-center justify-center space-x-14">
+        <div class="relative group">
+          <button class="flex items-center space-x-2" aria-label="Header Menu Furniture Submenu">
+            <span class="whitespace-nowrap">Furniture</span>
+            <img class="w-4 h-4" src="./img/arrow-down.svg" alt="Arrow Header Menu">
+          </button>
+          <!-- Dropdown Menu -->
+          <div class="absolute left-0 mt-2 hidden group-hover:block shadow-lg rounded">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Chairs</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Tables</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Beds</a>
+          </div>
+        </div>
+        <a href="#" class="whitespace-nowrap hover:text-gray-400">Shop</a>
+        <a href="#" class="whitespace-nowrap hover:text-gray-400">About Us</a>
+        <a href="#" class="whitespace-nowrap hover:text-gray-400">Contact</a>
+      </nav>
+      <div class="hidden md:flex justify-end">
+        <div class="relative">
+          <button class="flex items-center" aria-label="Cart Items">
+            <img class="w-6 h-6" src="./img/bag.svg" alt="Show Cart">
+            <div
+              class="absolute top-0 -right-2 mt-0.5 mr-0.5 bg-orange-500 text-xs rounded-full w-5 h-5 flex items-center justify-center">
+              0</div>
+          </button>
+        </div>
+      </div>
+      <!-- hamburguer -->
+      <div class="md:hidden col-span-1 col-start-3 text-right">
+        <button data-collapse-toggle="navbar-hamburger" type="button" aria-label="Header Menu Mobile"
+          class="p-2 w-10 h-10 text-sm text-gray-200 rounded-lg bg-gray-600/40 hover:bg-gray-400" aria-label="Menu">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+    </section>
+    <!-- Hero Section -->
+    <section class="grid grid-cols-12 content-center justify-items-center text-center mx-auto gap-4 pt-20 2xl:px-20">
+      <div class="col-span-12 md:col-span-8 md:col-start-3 mx-auto">
+        <h2 class="text-2xl lg:text-2xl xl:text-7xl font-gilroybold leading-2 xl:leading-[6rem]">Make your interior more
+          minimalistic & modern</h2>
+      </div>
+      <div class="col-span-12 lg:col-span-6 lg:col-start-4 mx-auto">
+        <p class="sm:text-xl xl:text-2xl font-gilroyregular px-10 xl:px-20">Turn your room with panto into a lot more
+          minimalist and modern
+          with ease and speed</p>
+      </div>
+      <!-- Search input-->
+      <div class="col-span-12 gap-0 justify-center w-full max-w-md mx-auto pb-52 md:pb-10 lg:pb-36 xl:pb-40 2xl:pb-52 ">
+        <div class="flex items-center justify-center mt-6">
+          <div class="relative">
+            <label class="sr-only" for="search">Search</label>
+            <input type="search" placeholder="Search furniture" id="search"
+              class="w-80 h-14 p-6 border-2 border-gray-400 font-gilroyregular text-lg rounded-full bg-gray-600/70 placeholder:text-white">
+            <div class="absolute top-2 right-2">
+              <img class="w-10 h-10" src="./img/search-icon.svg" alt="Search Icon" aria-hidden="true">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Image Section -->
+    <section class="grid grid-cols-12 xl:pb-80">
+      <div class="hidden md:block col-span-12 col-start-3 justify-center">
+        <img class="md:w-16 md:mt-16 lg:w-24 lg:mt-0 xl:w-36 xl:pl-10 2xl:mt-1 2xl:pl-8" src="./img/button-group.png"
+          alt="Sofa Color Selector">
+      </div>
+      <div class="hidden md:block col-span-2">
+        <img class="pl-16 2xl:pt-4 xl:pl-24 2xl:pl-32" src="./img/button.png" alt="Pot Button Selector">
+      </div>
+      <div class="hidden md:block col-span-1 col-start-8 2xl:col-start-7 mt-10">
+        <img class="pt-6 xl:pl-10 2xl:pl-24" src="./img/button.png" alt="Ornament Buton Selector">
+      </div>
+      <div class="hidden md:block col-span-1 col-start-12 mt-20">
+        <img class="pt-6 pl-16" src="./img/button.png" alt="Pot Plant button Selector">
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+    <!-- WHY SECTION -->
+    <section
+      class="flex flex-col lg:flex-row justify-center content-center text-center items-start pb-3 lg:pb-0 lg:text-left lg:px-24 space-y-6 my-4 lg:my-14 lg:space-x-8">
+      <article class="w-full lg:basis-5/12 2xl:px-6 border-b-2 pb-5 lg:border-0 shadow lg:shadow-none">
+        <div class="text-xl lg:text-3xl xl:text-5xl font-gilroybold lg:py-10">
+          <h2>Why<br />Choosing Us</h2>
+        </div>
+      </article>
+      <article class="w-full lg:basis-1/3 2xl:px-6 border-b-2 pb-5 lg:border-0 shadow lg:shadow-none">
+        <!-- Article 1 -->
+        <div class="px-10 lg:px-0 lg:h-[128px] xl:h-32 2xl:h-30">
+          <h3 class="font-gilroybold text-xl lg:text-xl xl:text-2xl">Luxury facilities</h3>
+          <p class="font-gilroyregular text-base lg:text-sm xl:text-base">The advantage of hiring a workspace with us is
+            that givees you comfortable
+            service and all-around facilities.</p>
+        </div>
+        <div class="flex justify-center lg:justify-start">
+          <a href="#"
+            class="text-orange-500 text-base mt-4 lg:mt-0 lg:text-sm xl:text-base font-semibold flex items-center">
+            More Info <img src="./img/more-info-icon.svg" alt="Luxury Facilities More info button">
+          </a>
+        </div>
+      </article>
+      <!-- Article 2 -->
+      <article class="w-full lg:basis-1/3 2xl:px-6 border-b-2 pb-5 lg:border-0 shadow lg:shadow-none">
+        <div class="px-10 lg:px-0 lg:h-[128px] xl:h-32 2xl:h-30">
+          <h3 class="font-gilroybold text-xl lg:text-xl xl:text-2xl">Affordable Price</h3>
+          <p class="font-gilroyregular text-base lg:text-sm xl:text-base">You can get a workspace of the highst quality
+            at
+            an affordable price and
+            still enjoy the facilities that are oly here.</p>
+        </div>
+        <div class="flex justify-center lg:justify-start">
+          <a href="#"
+            class="text-orange-500 text-base mt-4 lg:mt-0 lg:text-sm xl:text-base font-semibold flex items-center">
+            More Info <img src="./img/more-info-icon.svg" alt="Affordable Price More info button">
+          </a>
+        </div>
+      </article>
+      <!-- Article 3 -->
+      <article class="w-full lg:basis-1/3 2xl:px-6">
+        <div class="px-10 lg:px-0 lg:h-[128px] xl:h-32 2xl:h-30">
+          <h3 class="font-gilroybold text-xl lg:text-xl xl:text-2xl">Many Choices</h3>
+          <p class="font-gilroyregular text-base lg:text-sm xl:text-base">We provide many unique work space choices so
+            that you can choose the
+            workspace to your liking.</p>
+        </div>
+        <div class="flex justify-center lg:justify-start">
+          <a href="#"
+            class="text-orange-500 text-base mt-4 lg:mt-0 lg:text-sm xl:text-base font-semibold flex items-center">
+            More Info <img src="./img/more-info-icon.svg" alt="More info button Many Choices">
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- SELLING PRODUCTS CARROUSEL -->
+    <section class="bg-gray-100 mx-auto pt-10 lg:px-48 shadow-lg lg:shadow-none">
+      <h2 class="text-2xl lg:text-4xl font-gilroybold text-center m-6">Best Selling Product</h2>
+      <aside class="flex items-center justify-center mx-auto p-6">
+        <div class="justify-center mb-12 space-x-4 p-2 bg-gray-200 rounded-full font-gilroyregular">
+          <button aria-label="Selling Products Chair Menu"
+            class="lg:px-4 lg:py-2 text-sm lg:text-[18px] whitespace-nowrap hover:bg-slate-500 hover:rounded-full hover:text-white bg-gray-100 text-gray-800 rounded-full">Chair</button>
+          <button aria-label="Selling Products beds Menu"
+            class="lg:px-4 lg:py-2 text-sm lg:text-[18px] whitespace-nowrap hover:bg-slate-500 hover:rounded-full hover:text-white text-gray-600">Beds</button>
+          <button aria-label="Selling Products Sofa Menu"
+            class="lg:px-4 lg:py-2 text-sm lg:text-[18px] whitespace-nowrap hover:bg-slate-500 hover:rounded-full hover:text-white text-gray-600">Sofa</button>
+          <button aria-label="Selling Products Lamp Menu"
+            class="lg:px-4 lg:py-2 text-sm lg:text-[18px] whitespace-nowrap hover:bg-slate-500 hover:rounded-full hover:text-white text-gray-600">Lamp</button>
+        </div>
+      </aside>
+      <!-- Product 1 -->
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 items-center">
+        <article class="shadow-md rounded-lg flex flex-col items-center">
+          <img src="./img/chair-1.png" alt="Sakarias Armchair Image" class="mb-4">
+          <div class="text-left w-full bg-white px-20 py-10 lg:p-8">
+            <div class="hidden lg:block relative">
+              <div class="absolute -top-[70px] -left-[80px] w-24 h-24">
+                <img class="hover:opacity-50 cursor-pointer" src="./img/arrow-left.svg" alt="Carrousel Products Arrow Previous">
+              </div>
+            </div>
+            <p class="text-base text-gray-500 mb-1">Chair</p>
+            <h3 class="text-xl font-gilroybold mb-1">Sakarias Armchair</h3>
+            <div class="flex items-center mb-2">
+              <img src="./img/stars.svg" alt="Sakarias Chair Stars Rating">
+            </div>
+            <div class="flex justify-between items-center mt-12">
+              <div>
+                <p class="text-2xl font-gilroybold mb-2">$392</p>
+              </div>
+              <div><img class="w-12 h-12" src="./img/add-icon.svg" alt="Add to Cart"></div>
+            </div>
+          </div>
+        </article>
+        <!-- Product 2 -->
+        <article class="shadow-md rounded-lg flex flex-col items-center">
+          <img src="./img/chair-2.png" alt="Baltsar Chair Image" class="mb-4">
+          <div class="text-left w-full bg-white px-20 py-10 lg:p-8">
+            <p class="text-base text-gray-500 mb-1">Chair</p>
+            <h3 class="text-xl font-gilroybold mb-1">Baltsar Chair</h3>
+            <div class="flex items-center mb-2">
+              <img src="./img/stars.svg" alt="Baltsar Chair Stars Rating">
+            </div>
+            <div class="flex justify-between items-center mt-12">
+              <div>
+                <p class="text-2xl font-gilroybold mb-2">$392</p>
+              </div>
+              <div><img class="w-12 h-12" src="./img/add-icon.svg" alt="Add to Cart"></div>
+            </div>
+          </div>
+        </article>
+        <!-- Product-3 -->
+        <article class="shadow-md rounded-lg flex flex-col items-center">
+          <img src="./img/chair-3.png" alt="Anjay Chair Image" class="mb-4">
+          <div class="text-left w-full bg-white px-20 py-10 lg:p-8">
+            <p class="text-base text-gray-500 mb-1">Chair</p>
+            <h3 class="text-xl font-gilroybold mb-1">Anjay Chair</h3>
+            <div class="flex items-center mb-2">
+              <img src="./img/stars.svg" alt="Anjay Chair Stars Rating">
+            </div>
+            <div class="flex justify-between items-center mt-12">
+              <div>
+                <p class="text-2xl font-gilroybold mb-2">$392</p>
+              </div>
+              <div><img class="w-12 h-12" src="./img/add-icon.svg" alt="Add to Cart"></div>
+            </div>
+          </div>
+        </article>
+        <!-- Product-4 -->
+        <article class="shadow-md rounded-lg flex flex-col items-center">
+          <img src="./img/chair-4.png" alt="Nyantuy Chair Image" class="mb-4">
+          <div class="text-left w-full bg-white px-20 py-10 lg:p-8">
+            <div class="relative">
+              <div class="absolute -top-[70px] -right-[80px] w-24 h-24">
+                <img class="hover:opacity-50 cursor-pointer" src="./img/arrow-right.svg" alt="Carrousel Products Arrow Next">
+              </div>
+            </div>
+            <p class="text-base text-gray-500 mb-1">Chair</p>
+            <h3 class="text-xl font-gilroybold mb-1">Nyantuy Chair</h3>
+            <div class="flex items-center mb-2">
+              <img src="./img/stars.svg" alt="Nyantuy Chair Stars Rating">
+            </div>
+            <div class="flex justify-between items-center mt-12">
+              <div>
+                <p class="text-2xl font-gilroybold mb-2">$392</p>
+              </div>
+              <div><img class="w-12 h-12" src="./img/add-icon.svg" alt="Add Chair to Cart"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="flex justify-center text-center mt-6 pb-5 lg:pb-10">
+        <a href="#" class="text-orange-500 font-semibold flex items-center">
+          View All <img src="./img/more-info-icon.svg" alt="Carrousel Products Arrow Next">
+        </a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCES SECTION -->
+    <section
+      class="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left lg:justify-around gap-8 pb-10 lg:pb-48 shadow lg:shadow-none">
+      <!-- Experiences Image Content -->
+      <div class="basis-1/2">
+        <h2 class="lg:hidden text-orange-600 text-2xl text-center mt-10 font-gilroymedium uppercase">Experiences</h2>
+        <div class="hidden lg:block relative -z-10">
+          <div class="absolute top-0 left-0 bg-[#f7f7f7] w-96 h-96 rounded-r-lg"></div>
+          <div class="absolute top-56 right-10 bg-[#f7f7f7] w-96 h-72 rounded-lg"></div>
+        </div>
+        <img src="./img/esperiences-image.png"
+          class="pt-10 lg:w-10/12 lg:pt-20 z-10 mb-10 drop-shadow-xl lg:rounded-r-lg" alt="Modern interior Image"
+          aria-hidden="true">
+      </div>
+      <!-- Experiences Text Section -->
+      <article class="basis-1/2 space-y-4 px-20 lg:px-44">
+        <h2 class="hidden lg:block text-orange-600 text-sm font-gilroymedium uppercase">Experiences</h2>
+        <h3 class="text-4xl font-gilroybold text-gray-800 leading-tight">We Provide You The Best Experience</h3>
+        <p class="text-gray-600 font-gilroyregular text-lg">
+          You don't have to worry about the result because all of these interiors are made by people who are
+          professionals in their fields with an elegant and luxurious style and with premium quality materials
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <a href="#" class="text-orange-500 text-base mt-4 lg:mt-0 lg:text-sm font-semibold flex items-center">
+            More Info <img src="./img/more-info-icon.svg" alt="Experiences More Info">
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- MATERIALS SECTION -->
+    <section
+      class="flex flex-col-reverse lg:flex-row items-center justify-center text-center lg:text-left lg:justify-around gap-8 pb-10 shadow lg:shadow-none">
+      <article class="basis-1/2 space-y-4 px-20 lg:px-44">
+        <h2 class="hidden lg:block text-orange-600 text-sm font-gilroymedium uppercase">Materials</h2>
+        <h3 class="text-4xl font-gilroybold text-gray-800 leading-tight">Very serious materials for making furniture
+        </h3>
+        <p class="text-gray-600 font-gilroyregular text-lg">Because panto was very serious about designing furniture for
+          our environment, using a very expensive and famous capital but at a relatively low price</p>
+        <div class="flex justify-center lg:justify-start">
+          <a href="#" class="text-orange-500 text-base mt-4 lg:mt-0 lg:text-sm font-semibold flex items-center">
+            More Info <img src="./img/more-info-icon.svg" alt="Materials More Info">
+          </a>
+        </div>
+      </article>
+      <!-- Materials Image Content -->
+      <div class="grid grid-cols-4 gap-2 justify-items-center lg:justify-items-start">
+        <div class="col-span-2 lg:col-span-1">
+          <img class="w-56 h-64 rounded-lg" src="./img/materials-section-image1.png" alt="Furniture Image 1"
+            aria-hidden="true">
+          <img class="w-56 h-[338px] rounded-lg" src="./img/materials-section-image2.png" alt="Furniture Image 2"
+            aria-hidden="true">
+        </div>
+        <div class="col-span-2 lg:col-span-3 content-end pb-16 drop-shadow-xl">
+          <img class="rounded-lg" src="./img/materials-section-image3.png" alt="Furniture Image 3" aria-hidden="true">
+        </div>
+      </div>
+      <h2 class="lg:hidden text-orange-600 text-2xl text-center mt-10 font-gilroymedium uppercase">Materials</h2>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="mt-10 mb-12 lg:my-48">
+      <div class="text-center mb-14">
+        <h2 class="text-orange-600 text-2xl lg:text-sm font-gilroymedium uppercase py-4">Testmonials</h2>
+        <h3 class="text-4xl font-gilroybold text-gray-800 leading-tight">Our Clients Review</h3>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center items-center text-center gap-10">
+        <!-- Testimonial 1 -->
+        <article class="testimonials-card bg-mat-background-1">
+          <div class="relative z-30 bg-white w-[334px] h-[215px] mt-[248px] pt-10 rounded-xl">
+            <h2 class="font-gilroybold text-lg">Bang Upin</h2>
+            <span class="font-gilroyregular block text-xs ">Pedagang Asongan</span>
+            <p class="font-gilroyregular text-sm mt-3 px-12">“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan
+              terlihat mahal“</p>
+            <div class="absolute -top-[32px] left-[129px]">
+              <img class="w-full h-full z-20" src="./img/testimonials-profile-photo-1.png"
+                alt="Bang Upin Profile Photo">
+            </div>
+            <div class="absolute -z-10 -top-[30px] left-[134px] waves bg-white rounded-full w-[66px] h-[66px]"></div>
+            <img class="absolute left-[124px] bottom-4" src="./img/testimonials-stars.svg"
+              alt="Bang Upin Starts Rating">
+            <div class="hidden lg:block absolute -top-[120px] -left-[65px] w-24 h-24">
+              <img class="hover:opacity-50 cursor-pointer" src="./img/arrow-left.svg" alt="Testimonials Carrousel Left">
+            </div>
+          </div>
+        </article>
+        <!-- Testimonial 2 -->
+        <article class="testimonials-card bg-mat-background-2">
+          <div class="relative z-30 bg-white w-[334px] h-[215px] mt-[248px] pt-10 rounded-xl">
+            <h2 class="font-gilroybold text-lg">Ibuk Sukijan</h2>
+            <span class="font-gilroyregular block text-xs ">Ibu Rumah Tangga</span>
+            <p class="font-gilroyregular text-sm mt-3 px-10">“Makasih Panto, aku sekarang berasa tinggal di apartment
+              karena barang-barang yang terlihat mewah“</p>
+            <div class="absolute -top-[32px] left-[129px]">
+              <img class="w-full h-full z-20" src="./img/testimonials-profile-photo-2.png"
+                alt="Ibuk Sukijan Profile Photo">
+            </div>
+            <div class="absolute -z-10 -top-[30px] left-[134px] waves bg-white rounded-full w-[66px] h-[66px]"></div>
+            <img class="absolute left-[124px] bottom-4" src="./img/testimonials-stars.svg"
+              alt="Ibuk Sukijan Starts Rating">
+          </div>
+        </article>
+        <!-- Testimonial 3 -->
+        <article class="testimonials-card bg-mat-background-3">
+          <div class="relative z-30 bg-white w-[334px] h-[215px] mt-[248px] pt-10 rounded-xl">
+            <h2 class="font-gilroybold text-lg">Mpok Ina</h2>
+            <span class="font-gilroyregular block text-xs">Karyawan Swasta</span>
+            <p class="font-gilroyregular text-sm mt-3 px-10">"Sangat terjangkau untuk kantong saya yang tidak terlalu
+              banyak"</p>
+            <div class="absolute -top-[32px] left-[129px]">
+              <img class="w-full h-full z-20" src="./img/testimonials-profile-photo-3.png" alt="Mpok Ina Profile Photo">
+            </div>
+            <div class="absolute -z-10 -top-[30px] left-[134px] waves bg-white rounded-full w-[66px] h-[66px]"></div>
+            <img class="absolute left-[124px] bottom-4" src="./img/testimonials-stars.svg" alt="Mpok Ina Starts Rating">
+            <div class="hidden lg:block absolute -top-[120px] -right-[68px] w-24 h-24">
+              <img class="hover:opacity-50 cursor-pointer" src="./img/arrow-right.svg" alt="Testimonials Carrousel Right">
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mx-auto bg-[#f7f7f7]">
+      <div class="grid lg:grid-cols-10 gap-8 md:px-40 lg:px-52 pt-[5%] text-center lg:text-left">
+        <!-- Brand Section -->
+        <div class="lg:col-span-4 text-center lg:text-left">
+          <h1 class="font-gilroybold text-3xl">Panto</h1>
+          <p class="mt-4 font-gilroymedium text-base">
+            The advantage of hiring a workspace with us is that gives you comfortable service and all-around facilities.
+          </p>
+        </div>
+        <!-- Services -->
+        <div class="lg:col-span-2">
+          <h2 class="font-gilroymedium text-lg text-orange-500 mb-4">Services</h2>
+          <ul class="space-y-2 font-gilroymedium text-base">
+            <li><a href="#">Email Marketing</a></li>                      
+            <li><a href="#">Campaigns</a></li>
+            <li><a href="#">Branding</a></li>
+          </ul>
+        </div>
+        <!-- Furniture -->
+        <div class="lg:col-span-2">
+          <h2 class="font-gilroymedium text-lg text-orange-500 mb-4">Furniture</h2>
+          <ul class="space-y-2 font-gilroymedium text-base">
+            <li><a href="#">Beds</a></li>
+            <li><a href="#">Chair</a></li>
+            <li><a href="#">All</a></li>
+          </ul>
+        </div>
+        <!-- Follow Us -->
+        <div class="lg:col-span-2">
+          <h2 class="font-gilroymedium text-center lg:text-left text-lg text-orange-500 mb-4">Follow Us</h2>
+          <ul class="space-y-2 font-gilroymedium text-base">
+            <li class="inline"><a href="#" class="flex justify-center items-center lg:justify-start lg:items-start space-x-2"><span
+                  class="text-gray-600"><img class="w-5 h-5" src="./img/facebook-icon.svg" alt="Visit Facebook Link" arial-label="Facebook Social Media Icon"></span>
+                <span class="block leading-8">Facebook</span></a></li>
+            <li class="inline"><a href="#" class="flex justify-center items-center lg:justify-start lg:items-start space-x-2"><span
+                  class="text-gray-600"><img class="w-5 h-5" src="./img/twitter-icon.svg" alt="Visit Facebook Link" arial-label="Twitter Social Media Icon"></span>
+                <span class="block leading-8">Twitter</span></a></li>
+            <li class="inline"><a href="#" class="flex justify-center items-center lg:justify-start lg:items-start space-x-2"><span
+                  class="text-gray-600"><img class="w-5 h-5" src="./img/instagram-icon.svg" alt="Visit Facebook Link" arial-label="Instagram Social Media Icon"></span>
+                <span class="block leading-8">Instagram</span></a></li>
+          </ul>
+        </div>
+        <!-- Terms and conditions -->
+      </div>
+      <div class="mx-auto lg:px-52 mt-32 pb-10 flex justify-center lg:justify-between text-base">
+        <div class="copyright text-gray-400">
+          <p>&copy; 2021</p>
+        </div>
+        <div class="font-gilroymedium text-gray-600 px-10">
+          <a class="px-8" href="#">Terms & Conditions</a>
+          <a class="px-8" href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+
+</html>
